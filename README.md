@@ -9,7 +9,7 @@ For this project, I am tasked with developing a financial planning tool for memb
 
 The first tool allows users to visualize their composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
 
-The second tool is a retirement planning tool that uses Alpaca API to fetch historical closing prices for a retirement portfolio composed of stocks and bonds, then runs Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to calculate the expected portfolio returns given a specific initial investment amount.
+The second tool is a retirement planning tool that uses Alpaca API to fetch historical closing prices for a retirement portfolio composed of stocks and bonds, then runs Monte Carlo simulations to project the portfolio performance at 30 years, 10 years and 5 years. I then use the Monte Carlo data to calculate the expected portfolio returns given a specific initial investment amount.
 
 
 ### Resources
