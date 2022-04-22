@@ -5,12 +5,12 @@
 
 ## Overview
 
-For this project, I am tasked with developing a financial planning tool for users to assess monthly personal finances and to be able to forecast a reasonably good retirement plan based on cryptocurriencies, stocks and bonds.
+For this project, I am tasked with developing a financial planning tool for members of a credit union to assess monthly personal finances and to be able to forecast a reasonably good retirement plan based on cryptocurriencies, stocks and bonds.
 
 The first tool allows users to visualize their composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
 
 The second tool is a retirement planning tool that uses Alpaca API to fetch historical closing prices for a retirement portfolio composed of stocks and bonds, then runs Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to calculate the expected portfolio returns given a specific initial investment amount.
----
+
 
 ### Resources
 
@@ -24,7 +24,7 @@ This project utilizes two APIs:
 
 In this section I have developed a personal finance planner application. To develop the personal finance planner prototype, I took into account the following assumptions:
 
-* The average household income for each member of the credit union in the dataset is $12,000.
+* The average household income for each member of the credit union is $12,000.
 
 * Every union member has a savings portfolio composed of cryptocurrencies, stocks and bonds:
 
@@ -43,9 +43,6 @@ First, a pie chart of portfolio savings composition is generated.
 Then second, `if` conditional statements are used to validate if the current savings are enough for an emergency fund. An ideal emergency fund should be equal to three times the monthly income.
 
 ![if-statements](Images/if-statements.png)
-![enough-funds](Images/enough-funds.png)
-
-In this case, the total savings is sufficient for an emergency fund.
 
 # Part 2 - Retirement Planning
 
@@ -85,18 +82,15 @@ For the retirement analysis the following steps were executed:
 
 To extend this project further, the retirement plan is adjusted from `30` years to account for an earlier than normal retirement at `5` and `10` years into the future. The portfolio composition of both 5-year and 10-year Monte Carlo simulations have been adjusted to include more risk with an 80/20 split for stocks over bonds.
 
-## Early Retirement Analysis
+## Early Retirement Analysis - 5-Year & 10-Yeart Monte Carlo Simulations
 
-### 5-Year Monte Carlo Simulations
-
-### 1. Summary Statistics
+### 1. 5-Year Monte Carlo Summary Statistics
 
 ![summary-5](Images/mc-5-summary.png)
 
-2. Given an initial investment of `$50,000`, calculate the expected portfolio return in dollars at the `95%` lower and upper confidence intervals.
+### 2. Given an initial investment of `$50,000`, calculate the expected portfolio return in dollars at the `95%` lower and upper confidence intervals.
 
 ![mc-5-years](Images/mc-5-years.png)
-
 
 ### 5-Year Monte Carlo Simulations Plots
 ![mc-retirement-5](Images/mc-retirement-5.png)
@@ -105,11 +99,11 @@ To extend this project further, the retirement plan is adjusted from `30` years 
 
 ### 10-Year Monte Carlo Simulations
 
-1. 10-Year Monte Carlo Summary Statistics
+### 1. 10-Year Monte Carlo Summary Statistics
 
 ![mc-summary-10](Images/mc-summary-10.png)
 
-2. Given an initial investment of `$50,000`, calculate the expected portfolio return in dollars at the `95%` lower and upper confidence intervals.
+### 2. Given an initial investment of `$50,000`, calculate the expected portfolio return in dollars at the `95%` lower and upper confidence intervals.
 
 ![mc-10-years](Images/mc-10-years.png)
 
